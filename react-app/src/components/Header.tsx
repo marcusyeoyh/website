@@ -15,7 +15,7 @@ const Header = () => {
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
-              style={{ color: "white", fontFamily: "Arial" }}
+              style={{ color: "white", fontFamily: "Helvetica Neue" }}
             >
               my_website!
             </a>
@@ -23,7 +23,7 @@ const Header = () => {
               className="dropdown-menu"
               style={{
                 color: "white",
-                fontFamily: "Arial",
+                fontFamily: "Helvetica Neue",
                 minWidth: "300px",
                 borderRadius: "10px",
                 boxShadow:
@@ -37,16 +37,6 @@ const Header = () => {
                 <p className="mb-0">Location: Singapore</p>
                 <p className="mb-0">Last Edit: [insert date here]</p>
               </div>
-              {/* <li>
-                <a className="dropdown-item" href="#">
-                  Location: Singapore, Singapore
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Last Edit:
-                </a>
-              </li> */}
             </ul>
           </li>
         </ul>
