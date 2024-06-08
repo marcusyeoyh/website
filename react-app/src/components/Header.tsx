@@ -19,11 +19,25 @@ const Header = () => {
             >
               my_website!
             </a>
-            <ul className="dropdown-menu">
-              <div className="justify-content-center">
-                Welcome to my website!
+            <ul
+              className="dropdown-menu"
+              style={{
+                color: "white",
+                fontFamily: "Arial",
+                minWidth: "300px",
+                borderRadius: "10px",
+                boxShadow:
+                  "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+                backgroundColor: "#494848",
+              }}
+            >
+              <div className="p-3">
+                <p className="mb-0">Welcome to my website!</p>
+                <hr />
+                <p className="mb-0">Location: Singapore</p>
+                <p className="mb-0">Last Edit: [insert date here]</p>
               </div>
-              <li>
+              {/* <li>
                 <a className="dropdown-item" href="#">
                   Location: Singapore, Singapore
                 </a>
@@ -32,7 +46,7 @@ const Header = () => {
                 <a className="dropdown-item" href="#">
                   Last Edit:
                 </a>
-              </li>
+              </li> */}
             </ul>
           </li>
         </ul>
