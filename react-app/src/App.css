@@ -1,10 +1,36 @@
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("../public/HelveticaNeue/HelveticaNeueRoman.otf") format("opentype");
-  font-weight: normal;
+  font-family: "Raleway";
+  src: url("assets/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Raleway", sans-serif; /* Fallback to a generic sans-serif font */
+  margin: 0; /* Reset default body margin */
+  padding: 0; /* Reset default body padding */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Inherit box-sizing from body for all elements */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+div,
+button,
+input,
+textarea {
+  font-family: "Raleway", sans-serif !important; /* Add specificity and use !important to override Bootstrap */
 }
