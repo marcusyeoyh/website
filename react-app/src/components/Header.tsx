@@ -12,6 +12,17 @@ const Header = () => {
             <li className="nav-item">
               <Link
                 className={`nav-link ${
+                  location.pathname === "/" ? "active" : ""
+                }`}
+                aria-current="page"
+                to="/"
+              >
+                home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className={`nav-link ${
                   location.pathname === "/aboutme" ? "active" : ""
                 }`}
                 aria-current="page"

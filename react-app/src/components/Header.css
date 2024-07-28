@@ -1,3 +1,7 @@
+.navbar {
+  height: 60px;
+}
+
 .navbar-nav .nav-link {
   position: relative;
   margin-left: 10px;

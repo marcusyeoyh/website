@@ -1,0 +1,17 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.sidebar-button {
+  background-color: transparent;
+  font-size: 1.5rem;
+  margin: 3px;
+  border-color: transparent;
+  justify-content: center;
+  align-items: center;
+}
