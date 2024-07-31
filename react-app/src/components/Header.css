@@ -1,5 +1,6 @@
 .navbar {
   height: 60px;
+  background-color: transparent;
 }
 
 .navbar-nav .nav-link {

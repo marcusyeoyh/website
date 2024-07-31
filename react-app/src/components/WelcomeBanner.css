@@ -1,0 +1,56 @@
+/* @keyframes fadeEffect {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+} */
+
+@keyframes slideEffect {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+}
+
+.welcome-banner {
+  height: calc(100vh - 60px);
+  width: calc(100vw - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-banner .changebar {
+  font-size: 3rem;
+  /* animation: fadeEffect 3s ease-in-out infinite; */
+  animation: slideEffect 2s ease-in-out infinite;
+}
+
+.welcome-banner .hey {
+  font-size: 3rem;
+}
+
+.welcome-banner .name {
+  font-size: 10rem;
+  transition: transform 0.3s ease;
+}
+
+.welcome-banner .name:hover {
+  transform: scale(1.2);
+}

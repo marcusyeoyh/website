@@ -5,7 +5,7 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-primary">
+    <nav className="navbar sticky-top navbar-expand-lg bg-body-primary">
       <div className="container-fluid">
         <div className="d-flex justify-content-center w-100">
           <ul className="navbar-nav">
