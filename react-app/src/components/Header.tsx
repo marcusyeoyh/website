@@ -1,8 +1,24 @@
 import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 
-const Header = () => {
+type HeaderProps = {
+  AboutMeRef: React.RefObject<HTMLDivElement>;
+  PortfolioRef: React.RefObject<HTMLDivElement>;
+  ContactMeRef: React.RefObject<HTMLDivElement>;
+  HomeRef: React.RefObject<HTMLDivElement>;
+};
+
+const Header: React.FC<HeaderProps> = ({
+  AboutMeRef,
+  PortfolioRef,
+  ContactMeRef,
+  HomeRef,
+}) => {
   const location = useLocation();
+
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <nav className="navbar sticky-top navbar-expand-lg bg-body-primary">
@@ -10,46 +26,46 @@ const Header = () => {
         <div className="d-flex justify-content-center w-100">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link
+              <button
                 className={`nav-link ${
                   location.pathname === "/" ? "active" : ""
                 }`}
                 aria-current="page"
-                to="/"
+                onClick={() => scrollToSection(HomeRef)}
               >
                 home
-              </Link>
+              </button>
             </li>
             <li className="nav-item">
-              <Link
+              <button
                 className={`nav-link ${
                   location.pathname === "/aboutme" ? "active" : ""
                 }`}
                 aria-current="page"
-                to="/aboutme"
+                onClick={() => scrollToSection(AboutMeRef)}
               >
                 about me
-              </Link>
+              </button>
             </li>
             <li className="nav-item">
-              <Link
+              <button
                 className={`nav-link ${
                   location.pathname === "/portfolio" ? "active" : ""
                 }`}
-                to="/portfolio"
+                onClick={() => scrollToSection(PortfolioRef)}
               >
                 portfolio
-              </Link>
+              </button>
             </li>
             <li className="nav-item">
-              <Link
+              <button
                 className={`nav-link ${
                   location.pathname === "/contactme" ? "active" : ""
                 }`}
-                to="/contactme"
+                onClick={() => scrollToSection(ContactMeRef)}
               >
                 contact me
-              </Link>
+              </button>
             </li>
           </ul>
         </div>

@@ -1,0 +1,11 @@
+.down-icon {
+  display: flex;
+  font-size: 3rem;
+  height: 75px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.down-icon:hover {
+  cursor: pointer;
+}
