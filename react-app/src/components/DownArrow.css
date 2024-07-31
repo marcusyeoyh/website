@@ -6,6 +6,6 @@
   margin-bottom: 20px;
 }
 
-.down-icon:hover {
+.down-icon .bi:hover {
   cursor: pointer;
 }

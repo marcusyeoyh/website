@@ -16,14 +16,15 @@ const Home = () => {
   const contactmeRef = useRef<HTMLDivElement>(null);
   return (
     <div>
-      <Header
-        AboutMeRef={aboutmeRef}
-        PortfolioRef={portfolioRef}
-        ContactMeRef={contactmeRef}
-        HomeRef={homeRef}
-      />
-      <LinksBar />
       <section ref={homeRef}>
+        <Header
+          AboutMeRef={aboutmeRef}
+          PortfolioRef={portfolioRef}
+          ContactMeRef={contactmeRef}
+          HomeRef={homeRef}
+        />
+        <LinksBar />
+
         <div className="content-body">
           <WelcomeBanner />
         </div>

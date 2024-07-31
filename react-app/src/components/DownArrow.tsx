@@ -10,8 +10,8 @@ const DownArrow: React.FC<ScrollButtonProps> = ({ targetRef }) => {
   };
 
   return (
-    <div className="down-icon" onClick={scrollToSection}>
-      <i className="bi bi-arrow-down"></i>
+    <div className="down-icon">
+      <i className="bi bi-arrow-down" onClick={scrollToSection}></i>
     </div>
   );
 };
