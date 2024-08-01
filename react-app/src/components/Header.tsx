@@ -1,21 +1,22 @@
-import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 
 type HeaderProps = {
+  TopRef: React.RefObject<HTMLDivElement>;
   AboutMeRef: React.RefObject<HTMLDivElement>;
   PortfolioRef: React.RefObject<HTMLDivElement>;
   ContactMeRef: React.RefObject<HTMLDivElement>;
   HomeRef: React.RefObject<HTMLDivElement>;
+  activeSection: string;
 };
 
 const Header: React.FC<HeaderProps> = ({
+  TopRef,
   AboutMeRef,
   PortfolioRef,
   ContactMeRef,
   HomeRef,
+  activeSection,
 }) => {
-  const location = useLocation();
-
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -28,10 +29,10 @@ const Header: React.FC<HeaderProps> = ({
             <li className="nav-item">
               <button
                 className={`nav-link ${
-                  location.pathname === "/" ? "active" : ""
+                  activeSection === "home" ? "active" : ""
                 }`}
                 aria-current="page"
-                onClick={() => scrollToSection(HomeRef)}
+                onClick={() => scrollToSection(TopRef)}
               >
                 home
               </button>
@@ -39,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({
             <li className="nav-item">
               <button
                 className={`nav-link ${
-                  location.pathname === "/aboutme" ? "active" : ""
+                  activeSection === "aboutme" ? "active" : ""
                 }`}
                 aria-current="page"
                 onClick={() => scrollToSection(AboutMeRef)}
@@ -50,7 +51,7 @@ const Header: React.FC<HeaderProps> = ({
             <li className="nav-item">
               <button
                 className={`nav-link ${
-                  location.pathname === "/portfolio" ? "active" : ""
+                  activeSection === "portfolio" ? "active" : ""
                 }`}
                 onClick={() => scrollToSection(PortfolioRef)}
               >
@@ -60,7 +61,7 @@ const Header: React.FC<HeaderProps> = ({
             <li className="nav-item">
               <button
                 className={`nav-link ${
-                  location.pathname === "/contactme" ? "active" : ""
+                  activeSection === "contactme" ? "active" : ""
                 }`}
                 onClick={() => scrollToSection(ContactMeRef)}
               >
