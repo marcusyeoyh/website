@@ -8,6 +8,7 @@ import DownArrow from "../components/DownArrow";
 import AboutMe from "./AboutMe";
 import Portfolio from "./Portfolio";
 import ContactMe from "./ContactMe";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const topRef = useRef<HTMLDivElement>(null);
@@ -83,6 +84,7 @@ const Home = () => {
           <ContactMe />
         </section>
       </section>
+      <Footer />
     </div>
   );
 };
