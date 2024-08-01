@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import Header from "../components/Header";
 import "../App.css";
 import "./Home.css";

@@ -1,4 +1,5 @@
 import "./Header.css";
+import resume from "../assets/Marcus Yeo Resume 2024.pdf";
 
 type HeaderProps = {
   TopRef: React.RefObject<HTMLDivElement>;
@@ -19,6 +20,14 @@ const Header: React.FC<HeaderProps> = ({
 }) => {
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const downloadResume = () => {
+    const link = document.createElement("a");
+    link.href = resume;
+    link.download = "marcusyeo_resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -66,6 +75,14 @@ const Header: React.FC<HeaderProps> = ({
                 onClick={() => scrollToSection(ContactMeRef)}
               >
                 contact me
+              </button>
+            </li>
+            <li className="nav-item">
+              <button
+                className="nav-link active"
+                onClick={() => downloadResume()}
+              >
+                my resume
               </button>
             </li>
           </ul>
