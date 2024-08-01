@@ -1,3 +1,40 @@
 .page {
   height: 100vh;
+  display: flex;
+}
+
+.profilepic {
+  display: flex;
+  height: calc(100vh - 60px);
+  width: 50%;
+  align-items: center;
+  justify-content: right;
+}
+
+.profile-image {
+  width: 250px;
+  height: auto;
+  border: 3px solid #ccc;
+  border-radius: 10%;
+  padding: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 200px;
+}
+
+.aboutme-text {
+  height: calc(100vh - 60px);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hey-header {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.aboutme-body {
+  width: 500px;
 }
