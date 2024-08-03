@@ -57,14 +57,13 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="webpage">
       <section ref={topRef}>
         <Header
           TopRef={topRef}
           AboutMeRef={aboutmeRef}
           PortfolioRef={portfolioRef}
           ContactMeRef={contactmeRef}
-          HomeRef={homeRef}
           activeSection={activeSection}
         />
         <LinksBar />

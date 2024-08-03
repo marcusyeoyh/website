@@ -1,4 +1,11 @@
+.webpage {
+  width: 100vw;
+}
+
 .content-body {
-  width: 100%;
+  width: 100vw;
   display: flex;
+}
+.section {
+  padding: 20px;
 }

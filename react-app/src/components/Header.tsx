@@ -6,7 +6,6 @@ type HeaderProps = {
   AboutMeRef: React.RefObject<HTMLDivElement>;
   PortfolioRef: React.RefObject<HTMLDivElement>;
   ContactMeRef: React.RefObject<HTMLDivElement>;
-  HomeRef: React.RefObject<HTMLDivElement>;
   activeSection: string;
 };
 
@@ -15,7 +14,6 @@ const Header: React.FC<HeaderProps> = ({
   AboutMeRef,
   PortfolioRef,
   ContactMeRef,
-  HomeRef,
   activeSection,
 }) => {
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {

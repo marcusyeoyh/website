@@ -16,7 +16,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="page">
+    <div className="contactme-page">
       <div className="title">Let's stay in touch!</div>
       <div className="contact">
         <i className="bi bi-telephone-plus-fill"></i>

@@ -4,3 +4,12 @@
   display: flex;
   align-items: center;
 }
+
+.portfolio-body {
+  display: flex;
+  width: 100vw;
+}
+
+.hello {
+  width: 50%;
+}

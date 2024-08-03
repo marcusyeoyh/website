@@ -1,4 +1,4 @@
-.page {
+.contactme-page {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +26,11 @@
   font-size: 2rem;
   margin: 3px;
   justify-content: center;
+  transition: 0.2s ease-in-out;
+}
+
+.socialmedia:hover {
+  transform: scale(1.2);
 }
 
 .mediabar {
