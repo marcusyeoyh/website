@@ -1,15 +1,20 @@
-.body {
-  height: 100vh;
+.portfolio-page {
+  height: auto;
   overflow-y: auto;
-  display: flex;
-  align-items: center;
 }
 
-.portfolio-body {
-  display: flex;
+.portfolio-header {
+  margin-top: 70px;
+  margin-left: 100px;
   width: 100vw;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-.hello {
-  width: 50%;
+.container-list {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  height: 535px;
 }

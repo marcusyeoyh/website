@@ -8,23 +8,24 @@ const AboutMe = () => {
         <img src={profileImage} alt="Profile" className="profile-image" />
       </div>
       <div className="aboutme-text">
-        <p className="hey-header">Hey! Welcome to my website!</p>
+        <p className="hey-header">Hi! Welcome to my website!</p>
         <div className="aboutme-body">
           <p>
             I'm Marcus, a third-year Computer Science student at Nanyang
             Technological University, Singapore.
           </p>
           <p>
-            I enjoy coding, designing and developing products that make a
-            difference and solving complex problems.
+            I enjoy coding, designing and developing fullstack products and
+            solving complex problems.
           </p>
           <p>
-            I'm inqusitive by nature and love travelling and learning everything
-            and anything. I also enjoy volunteering and meeting new people.
+            I'm passionate about innovation and driven by impact. I love to work
+            with individuals from different backgrounds to produce products that
+            make a difference.
           </p>
           <p>
-            Outside of work, I love reading, working out and watching soccer
-            matches with my family and friends - YNWA!
+            Outside of work, I love travelling, reading, working out and
+            watching Liverpool matches - YNWA!
           </p>
         </div>
       </div>

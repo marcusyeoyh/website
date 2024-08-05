@@ -37,7 +37,7 @@ const Home = () => {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.6, // Adjust this value as needed
+        threshold: 0.6, // Adjust as needed for when the section becomes active
       }
     );
 
