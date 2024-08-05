@@ -14,16 +14,28 @@
   width: 100%;
   height: 450px;
   display: flex;
-  align-items: end;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-description {
-  background-color: white;
+  opacity: 0;
+  background-color: transparent;
+  color: white;
   margin: 20px;
+  transition: opacity 0.5s ease;
 }
 
 .container-body:hover {
-  background-color: red;
+  cursor: pointer;
+}
+
+.container-body:hover .container-description {
+  opacity: 1;
+}
+
+.container-body:hover .container-imageholder img {
+  filter: brightness(25%);
 }
 
 .container-imageholder {
