@@ -18,3 +18,21 @@
   margin-bottom: 50px;
   height: 535px;
 }
+
+.schoolrow:hover {
+  background-color: grey;
+}
+
+.table-container {
+  margin: 0 100px; /* Add 100px margin to the left and right */
+  overflow-x: auto; /* Optional: allow horizontal scrolling if needed */
+}
+
+.lastcol {
+  display: flex;
+  justify-content: end;
+}
+
+.middlecol {
+  justify-content: center;
+}

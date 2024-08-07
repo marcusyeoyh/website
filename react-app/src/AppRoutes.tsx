@@ -1,16 +1,18 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-// import AboutMe from "./pages/AboutMe";
-// import Portfolio from "./pages/Portfolio";
-// import ContactMe from "./pages/ContactMe";
+import PersonalWebsite from "./pages/PersonalWebsite";
+import Ticketing from "./pages/Ticketing";
+import REHome from "./pages/REHome";
+import Chatbot from "./pages/Chatbot";
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      {/* <Route path="/aboutme" element={<AboutMe />} />
-      <Route path="/portfolio" element={<Portfolio />} />
-      <Route path="/contactme" element={<ContactMe />} /> */}
+      <Route path="/website" element={<PersonalWebsite />} />
+      <Route path="/ticketing" element={<Ticketing />} />
+      <Route path="/rehome" element={<REHome />} />
+      <Route path="/chatbot" element={<Chatbot />} />
     </Routes>
   );
 };

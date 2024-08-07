@@ -1,5 +1,11 @@
-import React from "react";
+import ProjNavBar from "../components/ProjNavBar";
 
-export const PersonalWebsite = () => {
-  return <div>PersonalWebsite</div>;
+const PersonalWebsite = () => {
+  return (
+    <div>
+      <ProjNavBar />
+    </div>
+  );
 };
+
+export default PersonalWebsite;

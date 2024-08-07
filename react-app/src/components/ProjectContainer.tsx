@@ -1,11 +1,13 @@
 import React from "react";
 import "./ProjectContainer.css";
+import { useNavigate } from "react-router-dom";
 
 type ProjectContainerProps = {
   projName: string;
   projDescription: string;
   projLang: string;
   projImage: string;
+  projLink: string;
 };
 
 const ProjectContainer: React.FC<ProjectContainerProps> = ({
@@ -13,9 +15,15 @@ const ProjectContainer: React.FC<ProjectContainerProps> = ({
   projDescription,
   projLang,
   projImage,
+  projLink,
 }) => {
+  const navigate = useNavigate();
+  const handleClick = (route: string) => {
+    navigate(route);
+  };
+
   return (
-    <div className="container-body">
+    <div className="container-body" onClick={() => handleClick(projLink)}>
       <div className="container-imageholder">
         <img src={projImage} />
       </div>
