@@ -62,36 +62,44 @@ const Portfolio = () => {
         <div className="portfolio-header">→ SELECTED PROJECTS:</div>
         <div>
           <div className="container-list">
-            <ProjectContainer
-              projDescription="A webpage to showcase my porfolio and past works"
-              projLang="Full-Stack Development"
-              projName="This Website!"
-              projImage={personalWebsite}
-              projLink="/website"
-            />
-            <ProjectContainer
-              projDescription="A Ticketing and Support system to aid company support requests"
-              projLang="Full-Stack Development"
-              projName="Ticketing & Approval System"
-              projImage={ticketing}
-              projLink="/ticketing"
-            />
+            <div className="containerleft">
+              <ProjectContainer
+                projDescription="A webpage to showcase my porfolio and past works"
+                projLang="Full-Stack Development"
+                projName="This Website!"
+                projImage={personalWebsite}
+                projLink="/website"
+              />
+            </div>
+            <div className="containerright">
+              <ProjectContainer
+                projDescription="A Ticketing and Support system to aid company support requests"
+                projLang="Full-Stack Development"
+                projName="Ticketing & Approval System"
+                projImage={ticketing}
+                projLink="/ticketing"
+              />
+            </div>
           </div>
           <div className="container-list">
-            <ProjectContainer
-              projDescription="An interactive Chatbot application to answer FAQs and aid departmental processes"
-              projLang="Full-Stack Development"
-              projName="Interactive Chatbot WebApp"
-              projImage={chatbot}
-              projLink="/chatbot"
-            />
-            <ProjectContainer
-              projDescription="A one-stop webpage to aid property buyers in finding their ideal HDB home"
-              projLang="Front-End Development"
-              projName="REHome"
-              projImage={rehome}
-              projLink="/rehome"
-            />
+            <div className="containerleft">
+              <ProjectContainer
+                projDescription="An interactive Chatbot application to answer FAQs and aid departmental processes"
+                projLang="Full-Stack Development"
+                projName="Interactive Chatbot WebApp"
+                projImage={chatbot}
+                projLink="/chatbot"
+              />
+            </div>
+            <div className="containerright">
+              <ProjectContainer
+                projDescription="A one-stop webpage to aid property buyers in finding their ideal HDB home"
+                projLang="Front-End Development"
+                projName="REHome"
+                projImage={rehome}
+                projLink="/rehome"
+              />
+            </div>
           </div>
         </div>
       </div>
