@@ -68,7 +68,7 @@ const Portfolio = () => {
                 projLang="Full-Stack Development"
                 projName="This Website!"
                 projImage={personalWebsite}
-                projLink="/website"
+                projLink="https://github.com/marcusyeoyh/website"
               />
             </div>
             <div className="containerright">
@@ -77,7 +77,7 @@ const Portfolio = () => {
                 projLang="Full-Stack Development"
                 projName="Ticketing & Approval System"
                 projImage={ticketing}
-                projLink="/ticketing"
+                projLink="https://github.com/marcusyeoyh/ticketingwebapp"
               />
             </div>
           </div>
@@ -88,7 +88,7 @@ const Portfolio = () => {
                 projLang="Full-Stack Development"
                 projName="Interactive Chatbot WebApp"
                 projImage={chatbot}
-                projLink="/chatbot"
+                projLink="https://github.com/marcusyeoyh/Rasa-Chatbot"
               />
             </div>
             <div className="containerright">
@@ -97,7 +97,7 @@ const Portfolio = () => {
                 projLang="Front-End Development"
                 projName="REHome"
                 projImage={rehome}
-                projLink="/rehome"
+                projLink="https://github.com/marcusyeoyh/SC2006-SWE/tree/main/Housefinder"
               />
             </div>
           </div>

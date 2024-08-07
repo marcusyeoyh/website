@@ -1,6 +1,5 @@
 import React from "react";
 import "./ProjectContainer.css";
-import { useNavigate } from "react-router-dom";
 
 type ProjectContainerProps = {
   projName: string;
@@ -17,9 +16,8 @@ const ProjectContainer: React.FC<ProjectContainerProps> = ({
   projImage,
   projLink,
 }) => {
-  const navigate = useNavigate();
-  const handleClick = (route: string) => {
-    navigate(route);
+  const handleClick = (endpoint: string) => {
+    window.open(endpoint, "_blank");
   };
 
   return (
