@@ -16,12 +16,12 @@ const Portfolio = () => {
           <table className="table table-borderless">
             <tbody>
               <tr className="schoolrow">
-                <td scope="row">University of California, Berkeley</td>
-                <td className="lastcol">2023-2024</td>
-              </tr>
-              <tr className="schoolrow">
                 <td scope="row">Nanyang Technological University, Singapore</td>
                 <td className="lastcol">2021-2025</td>
+              </tr>
+              <tr className="schoolrow">
+                <td scope="row">University of California, Berkeley</td>
+                <td className="lastcol">2023-2024</td>
               </tr>
               <tr className="schoolrow">
                 <td scope="row">Hwa Chong Institution, Singapore</td>

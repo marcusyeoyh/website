@@ -1,21 +1,20 @@
 .portfolio-page {
-  height: auto;
-  overflow-y: auto;
+  width: 100%;
 }
 
 .portfolio-header {
-  margin-top: 70px;
-  margin-left: 100px;
-  width: 100vw;
+  padding-top: 70px;
+  padding-left: 7%;
+  width: 100%;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
 .container-list {
   display: flex;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 50px;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 50px;
   height: 535px;
 }
 
@@ -24,7 +23,7 @@
 }
 
 .table-container {
-  margin: 0 100px; /* Add 100px margin to the left and right */
+  padding: 0 100px; /* Add 100px padding to the left and right */
   overflow-x: auto; /* Optional: allow horizontal scrolling if needed */
 }
 
