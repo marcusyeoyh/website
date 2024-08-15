@@ -1,9 +1,10 @@
 .webpage {
-  width: 100vw;
+  width: calc(100vw - 15px);
+  box-sizing: border-box;
 }
 
 .content-body {
-  width: 100vw;
+  width: 100%;
   display: flex;
 }
 .section {
