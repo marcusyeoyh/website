@@ -30,6 +30,9 @@ const Home = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            console.log(
+              `Section ${entry.target.id} is intersecting ${entry.isIntersecting}`
+            );
             setActiveSection(entry.target.id);
           }
         });
